@@ -3,4 +3,4 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Algorithm main.cpp selectSort/Student.h)
+add_executable(Algorithm main.cpp selectSort/Student.h utils/SortTestHelper.h)

@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "selectSort/Student.h"
+#include "utils/SortTestHelper.h"
 
 using namespace std;
 
@@ -21,21 +22,20 @@ void selectionSort(T arr[], int n) {
         // 通过标准函数swap交互位置
         swap(arr[i], arr[minIndex]);
 
-        for (int k = 0; k < n; k++) {
-            cout << arr[k] << " ";
-        }
-        cout << endl;
+        SortTestHelper::printArray(arr, n);
     }
 }
 
 
 
 int main() {
-    int a[10] = {10, 8, 7, 1, 3 ,4, 5, 9, 6, 2};
-    selectionSort(a, sizeof(a)/ sizeof(a[0]));
+    int n = 100;
+    int *a = SortTestHelper::generateRandomArray(n, 1, 100);
+    selectionSort(a, n);
 
-    Student students[4] = {{"D", 90},{"A", 95},{"B", 83},{"C", 100}};
-    selectionSort(students, sizeof(students)/ sizeof(students[0]));
+//    Student students[4] = {{"D", 90},{"A", 95},{"B", 83},{"C", 100}};
+//    selectionSort(students, sizeof(students)/ sizeof(students[0]));
 
+    delete[] a;
     return 0;
 }
