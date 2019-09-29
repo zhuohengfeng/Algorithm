@@ -7,7 +7,7 @@ using namespace std;
 
 /**
  * 选择排序 O(n^2)
- * 使用泛型，可以接收任意类型，包括自定义类型(需要重载操作符'>')
+ * 使用泛型，可以接收任意类型，包括自定义类型 (需要重载操作符'>')
  */
 template <typename T>
 void selectionSort(T arr[], int n) {
@@ -25,7 +25,6 @@ void selectionSort(T arr[], int n) {
         SortTestHelper::printArray(arr, n);
     }
 }
-
 
 
 int main() {
