@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hengfeng/workspace/C_Cpp/CLion/Algorithm/main.cpp
+iostream
+-
+selectSort/Student.h
+/Users/hengfeng/workspace/C_Cpp/CLion/Algorithm/selectSort/Student.h
+utils/SortTestHelper.h
+/Users/hengfeng/workspace/C_Cpp/CLion/Algorithm/utils/SortTestHelper.h
+
+/Users/hengfeng/workspace/C_Cpp/CLion/Algorithm/selectSort/Student.h
+iostream
+-
+string
+-
+
+/Users/hengfeng/workspace/C_Cpp/CLion/Algorithm/utils/SortTestHelper.h
+iostream
+-
+
