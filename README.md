@@ -1,6 +1,8 @@
 # 算法学习记录 (C++)
 
-## 1. 选择排序
+## 一，排序
+
+### 1. 选择排序
 ```c++
 template <typename T>
 void selectionSort(T arr[], int n) {
@@ -22,7 +24,9 @@ void selectionSort(T arr[], int n) {
     }
 }
 ```
-## 2. 插入排序
+### 2. 插入排序
 
-## 3. 归并排序
+
+### 3. 归并排序
+
 
